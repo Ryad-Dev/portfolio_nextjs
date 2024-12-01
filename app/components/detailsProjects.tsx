@@ -1,7 +1,14 @@
 // ItemList.tsx (ou le fichier de votre choix)
 
+import ImageCarousel from "@/components/ui/ImageCarousel";
 import React from "react"; // Assurez-vous que le type est bien importé
 export default function DetailsProjets() {
+  const images = [
+    "./bt_apercu/1.png",
+    "./bt_apercu/2.png",
+    "./bt_apercu/3.png",
+    "./bt_apercu/4.png",
+  ];
   return (
     <div className=" text-center w-full h-screen  flex justify-center items-center   ">
       <div className=" text-white  w-5/6 h-5/6 flex justify-start rounded-3xl flex-col">
@@ -14,18 +21,18 @@ export default function DetailsProjets() {
             alt="BTracker"
             className="w-40 h-40 object-cover rounded-3xl"
           />
-          <div className="flex flex-col pl-3 h-40 justify-start">
+          <div className="flex flex-col pl-3 h-40 justify-between">
             <h2 className="text-xl font-bold mt-4 text-black flex justify-start $inter.className">
               Business Tracker
             </h2>
             <div className="bg-blue-300  p-1 rounded-md">
               {" "}
-              <p className="text-sm text-gray-600 flex justify-start ">
-                mobile app
+              <p className="text-sm text-gray-600 flex justify-center ">
+                mobile application
               </p>
             </div>
 
-            <div className="bg-blue-500 p-1 rounded-2xl text-sm text-white flex justify-start w-20">
+            <div className="bg-blue-600 p-1 rounded-xl text-sm text-white flex justify-center w-20">
               <button>Obtenir</button>
             </div>
 
@@ -38,29 +45,13 @@ export default function DetailsProjets() {
         </p>
         <div className="h-5"></div>
         <h1 className=" text-black text-left font-bold text-lg">Apercu</h1>
-
-        <div className="flex  space-x-4 pb-5 w-full">
-          <img
-            src="./bt_apercu/1.png"
-            alt="BTracker"
-            className="w-40 h-120 object-cover rounded-xl min-w-[200px]"
-          />
-          <img
-            src="./bt_apercu/2.png"
-            alt="BTracker"
-            className="w-40 h-120 object-cover rounded-xl min-w-[200px]"
-          />
-          <img
-            src="./bt_apercu/3.png"
-            alt="BTracker"
-            className="w-40 h-120 object-cover rounded-xl min-w-[200px]"
-          />
-          <img
-            src="./bt_apercu/4.png"
-            alt="BTracker"
-            className="w-40 h-120 object-cover rounded-xl min-w-[200px]"
-          />
+        <div >
+          {" "}
+          <ImageCarousel images={images} />{" "}
         </div>
+
+       
+
         <h1 className=" text-black text-left font-bold text-lg">
           Informations
         </h1>
@@ -96,15 +87,15 @@ export default function DetailsProjets() {
           </div>
           <hr className=" border-gray-600 my-2 mx-2 " />
         </div>
-         {/* // */}
-         <div className="flex flex-col text-black  ">
+        {/* // */}
+        <div className="flex flex-col text-black  ">
           <div className="flex justify-between ">
             <h2 className="text-gray-600 ">Version</h2>
             <h2>Beta test</h2>
           </div>
           <hr className=" border-gray-600 my-2 mx-2 " />
         </div>
-          {/* // */}
+        {/* // */}
         <div className="flex flex-col text-black pb-5 ">
           <div className="flex justify-between ">
             <h2 className="text-gray-600 ">Date de publication</h2>
