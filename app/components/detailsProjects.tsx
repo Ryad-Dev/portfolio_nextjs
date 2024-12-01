@@ -20,20 +20,21 @@ export default function DetailsProjets() {
         {/* Ajouter le composant ItemList ici */}
 
         <div className="bg-white rounded-lg  flex items-start justify-start w-full pb-5">
-          <Image
+          <div className=" w-28 h-28 lg:w-60 lg:h-60"> <Image
             src="/logo_bt.png" // Remplacez par votre chemin d'image
-            alt="Description de l'image"
-            width={500}
-            height={500}
-            className="w-40 h-40 object-cover rounded-3xl"
+            alt="logo_businessTracker"
+            width={300}
+            height={300}
+            className=" object-cover rounded-2xl"
             priority // Charger l'image en priorité si elle est visible dès le début
-          />
+          /></div>
+         
           {/* <img
             src="./logo_bt.png"
             alt="BTracker"
             className="w-40 h-40 object-cover rounded-3xl"
           /> */}
-          <div className="flex flex-col pl-3 h-40 justify-between">
+          <div className="flex flex-col pl-3 h-28 lg:h-40 justify-between">
             <h2 className="text-xl font-bold mt-4 text-black flex justify-start $inter.className">
               Business Tracker
             </h2>
@@ -44,7 +45,7 @@ export default function DetailsProjets() {
               </p>
             </div>
 
-            <div className="bg-blue-600 p-1 rounded-xl text-sm text-white flex justify-center w-20">
+            <div className="bg-blue-600 p-2 rounded-xl text-sm text-white flex justify-center w-20">
               <button
               onClick={handleClick}>
                 
