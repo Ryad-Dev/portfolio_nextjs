@@ -1,5 +1,5 @@
 // ItemList.tsx (ou le fichier de votre choix)
-
+import Image from "next/image";
 import ImageCarousel from "@/components/ui/ImageCarousel";
 import React from "react"; // Assurez-vous que le type est bien importé
 export default function DetailsProjets() {
@@ -9,6 +9,10 @@ export default function DetailsProjets() {
     "./bt_apercu/3.png",
     "./bt_apercu/4.png",
   ];
+  const handleClick = () => {
+    // Rediriger l'utilisateur vers Instagram
+    window.location.href = 'https://drive.google.com/file/d/1bIMHiE5u-I4OXmAS4Gk4q6V1ykh-3BSK/view?usp=sharing';
+  };
   return (
     <div className=" text-center w-full h-screen  flex justify-center items-center   ">
       <div className=" text-white  w-5/6 h-5/6 flex justify-start rounded-3xl flex-col">
@@ -16,11 +20,19 @@ export default function DetailsProjets() {
         {/* Ajouter le composant ItemList ici */}
 
         <div className="bg-white rounded-lg  flex items-start justify-start w-full pb-5">
-          <img
+          <Image
+            src="/logo_bt.png" // Remplacez par votre chemin d'image
+            alt="Description de l'image"
+            width={500}
+            height={500}
+            className="w-40 h-40 object-cover rounded-3xl"
+            priority // Charger l'image en priorité si elle est visible dès le début
+          />
+          {/* <img
             src="./logo_bt.png"
             alt="BTracker"
             className="w-40 h-40 object-cover rounded-3xl"
-          />
+          /> */}
           <div className="flex flex-col pl-3 h-40 justify-between">
             <h2 className="text-xl font-bold mt-4 text-black flex justify-start $inter.className">
               Business Tracker
@@ -33,7 +45,10 @@ export default function DetailsProjets() {
             </div>
 
             <div className="bg-blue-600 p-1 rounded-xl text-sm text-white flex justify-center w-20">
-              <button>Obtenir</button>
+              <button
+              onClick={handleClick}>
+                
+                Obtenir</button>
             </div>
 
             {/* <p className="text-gray-800 mt-2 flex justify-start pl-3">{item.description}</p> */}
@@ -45,12 +60,10 @@ export default function DetailsProjets() {
         </p>
         <div className="h-5"></div>
         <h1 className=" text-black text-left font-bold text-lg">Apercu</h1>
-        <div >
+        <div>
           {" "}
           <ImageCarousel images={images} />{" "}
         </div>
-
-       
 
         <h1 className=" text-black text-left font-bold text-lg">
           Informations
@@ -67,7 +80,7 @@ export default function DetailsProjets() {
         <div className="flex flex-col text-black ">
           <div className="flex justify-between ">
             <h2 className="text-gray-600 ">Taille</h2>
-            <h2>100 Mo</h2>
+            <h2>23 Mo</h2>
           </div>
           <hr className=" border-gray-600 my-2 mx-2 " />
         </div>
@@ -75,7 +88,7 @@ export default function DetailsProjets() {
         <div className="flex flex-col text-black ">
           <div className="flex justify-between ">
             <h2 className="text-gray-600 ">Langues</h2>
-            <h2>Francaise</h2>
+            <h2>Francais</h2>
           </div>
           <hr className=" border-gray-600 my-2 mx-2 " />
         </div>
@@ -99,7 +112,7 @@ export default function DetailsProjets() {
         <div className="flex flex-col text-black pb-5 ">
           <div className="flex justify-between ">
             <h2 className="text-gray-600 ">Date de publication</h2>
-            <h2>27 Novembre 2024</h2>
+            <h2>2 Décembre 2024</h2>
           </div>
           {/* <hr className=" border-gray-600 my-2 mx-2 " /> */}
         </div>

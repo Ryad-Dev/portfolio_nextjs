@@ -1,4 +1,4 @@
-import ItemList, { Item } from "./appModel";
+import ItemList, { Item } from "../../components/ui/appModel";
 
 // Page Projets
 export default function Projets() {
