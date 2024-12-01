@@ -1,35 +1,11 @@
 "use client";
 import DetailsProjets from "./components/detailsProjects";
 import Hero from "./components/hero";
-//import Image from "next/image";
-//import Projets from "./components/projects";
-// import {
-//   Carousel,
-//   CarouselContent,
-//   CarouselItem,
-//   CarouselNext,
-//   CarouselPrevious,
-// } from "@/components/ui/carousel"
 
 export default function Home() {
   return (
     <div className=" ">
       <Hero />
-      {/* <Carousel>
-  <CarouselContent>
-    <CarouselItem><img
-            src='https://via.placeholder.com/300'
-            alt='Projet B'
-            className="w-40 h-40 object-cover rounded-lg"
-          /></CarouselItem>
-    <CarouselItem>Image 2</CarouselItem>
-    <CarouselItem>Image 3</CarouselItem>
-  </CarouselContent>
-  <CarouselPrevious />
-  <CarouselNext />
-</Carousel> */}
-
-      {/* <Projets /> */}
       <DetailsProjets/>
 
     </div>
