@@ -11,7 +11,7 @@ export default function DetailsProjets() {
   ];
   const handleClick = () => {
     // Rediriger l'utilisateur vers Instagram
-    window.location.href = 'https://drive.google.com/file/d/1bIMHiE5u-I4OXmAS4Gk4q6V1ykh-3BSK/view?usp=sharing';
+    window.location.href = 'https://drive.google.com/file/d/1qENB-FHvbjjrmNbvFnMUAvmVqXrblna1/view?usp=drive_link';
   };
   return (
     <div className=" text-center w-full h-screen  flex justify-center items-center   ">
