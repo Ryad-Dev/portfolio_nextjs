@@ -45,9 +45,9 @@
 //               I build innovative solutions using modern technologies and
 //               effective approaches.
 //             </p>
-            
+
 //             <TagList items={tags} />
-            
+
 
 //             {/* Icônes de réseaux sociaux */}
 //             <div className="flex justify-center items-start space-x-4 mt-4">
@@ -105,10 +105,10 @@ const Hero: React.FC = () => {
     <div className="text-center w-full h-screen flex justify-center items-center relative overflow-hidden bg-neutral-950">
       {/* Fond subtil sans dégradé */}
       <div className="absolute inset-0 bg-neutral-900/30 backdrop-blur-sm"></div>
-      
+
       <div className="relative bg-neutral-900/95 backdrop-blur-xl text-white w-5/6 h-5/6 flex flex-wrap items-center justify-center rounded-3xl p-6 border-2 border-white/10 shadow-2xl ring-1 ring-white/5">
         <div className="flex flex-col lg:flex-row items-center justify-evenly space-y-4 lg:space-y-0 lg:space-x-12 w-full max-w-6xl mx-auto">
-          
+
           {/* Image de Profil - SANS dégradé */}
           <div className="flex justify-center items-center w-28 h-28 lg:w-60 lg:h-60 relative group cursor-pointer">
             <div className="absolute inset-0 bg-amber-900/70 rounded-full shadow-2xl group-hover:shadow-white/20 transition-shadow duration-300"></div>
@@ -126,7 +126,7 @@ const Hero: React.FC = () => {
 
           {/* Texte et description */}
           <div className="flex flex-col items-center lg:items-start w-full lg:w-1/2 p-6 lg:p-8 space-y-6 lg:space-y-8">
-            
+
             {/* Titre principal - SANS dégradé */}
             <div className="space-y-3">
               <h1 className="text-l font-black lg:text-3xl xl:text-3xl text-white leading-tight tracking-tight shadow-lg">
@@ -142,8 +142,8 @@ const Hero: React.FC = () => {
 
             {/* Description - SANS dégradé */}
             <div className="bg-white/5 backdrop-blur-sm px-6 py-4 rounded-2xl border border-white/10 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-              <p className="text-sm lg:text-lg text-gray-200 leading-relaxed font-light">
-                I build <span className="font-bold text-yellow-300 drop-shadow-md">innovative solutions</span> using modern technologies 
+              <p className="text-sm lg:text-lg text-gray-200 leading-relaxed font-light text-left">
+                I build <span className="font-bold text-yellow-300 drop-shadow-md">innovative solutions</span> using modern technologies
                 and effective approaches.
               </p>
             </div>
@@ -165,7 +165,7 @@ const Hero: React.FC = () => {
                 <div className="absolute inset-0 bg-white/20 rounded-2xl scale-0 group-hover:scale-100 transition-transform duration-300 opacity-0 group-hover:opacity-100"></div>
                 <i className="fa fa-github text-xl relative z-10"></i>
               </a>
-              
+
               <a
                 href="https://instagram.com/ryad.sc"
                 target="_blank"
@@ -176,7 +176,7 @@ const Hero: React.FC = () => {
                 <div className="absolute inset-0 bg-white/20 rounded-2xl scale-0 group-hover:scale-100 transition-transform duration-300 opacity-0 group-hover:opacity-100"></div>
                 <i className="fa fa-instagram text-xl relative z-10"></i>
               </a>
-              
+
               <a
                 href="https://x.com/ryad_sc"
                 target="_blank"
@@ -190,6 +190,11 @@ const Hero: React.FC = () => {
             </div>
           </div>
         </div>
+        {/* <svg className="w-8 h-8 -translate-y-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+</svg> */}
+
+
       </div>
     </div>
   );

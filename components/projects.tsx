@@ -77,22 +77,22 @@ export default function Projets() {
 
                 {/* TITRE (va à la ligne) */}
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent 
+                  <h3 className="text-left text-sm font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent 
                                  break-words leading-tight max-w-none">
                     {project.nom}
                   </h3>
                 </div>
               </div>
 
-              {/* CTA */}
-              <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 pt-4 border-t border-white/20 flex items-center gap-2">
+               {/*CTA */}
+              {/* <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 pt-4 border-t border-white/20 flex items-center gap-2">
                 <span className="text-sm font-semibold text-white hover:text-yellow-300 transition-colors">
                   Voir le projet
                 </span>
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </div>
+              </div> */}
             </Link>
           ))}
         </div>
