@@ -17,14 +17,14 @@ const Hero: React.FC<HeroProps> = () => {
       <div className="bg-neutral-900 text-white w-5/6 h-5/6 flex  flex-wrap items-center justify-center rounded-3xl p-6">
         <div className="flex flex-col lg:flex-row bg- items-center justify-evenly space-y-1 lg:space-y-2 lg:space-x-8">
           {/* Image de Profil */}
-          <div className="flex justify-center items-center w-28 h-28 lg:w-60 lg:h-60 bg-blue-700 rounded-full overflow-hidden">
+          <div className="flex justify-center items-center w-28 h-28 lg:w-60 lg:h-60 bg-zinc-700 rounded-full overflow-hidden">
             {/* <img
               src="/profil.png"
               alt="photo-profil"
               className="object-cover w-full h-full"
             /> */}
             <Image
-              src="/profil.png" // Remplacez par votre chemin d'image
+              src="/momoji.png" // Remplacez par votre chemin d'image
               alt="photo-profil"
               width={500}
               height={500}

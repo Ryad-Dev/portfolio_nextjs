@@ -1,12 +1,13 @@
 "use client";
 import DetailsProjets from "./components/detailsProjects";
 import Hero from "./components/hero";
+import Projets from "./components/projects";
 
 export default function Home() {
   return (
     <div className=" ">
       <Hero />
-      <DetailsProjets/>
+      <Projets/>
 
     </div>
   );
