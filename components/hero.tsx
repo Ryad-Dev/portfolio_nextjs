@@ -155,6 +155,16 @@ const Hero: React.FC = () => {
 
             {/* Boutons sociaux - SANS dégradés */}
             <div className="flex items-center space-x-6 pt-6 border-t border-white/20 w-full justify-center lg:justify-start">
+            <a
+                href="https://instagram.com/ryad.sc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative flex justify-center items-center h-12 w-12 bg-pink-500 hover:bg-pink-400 rounded-2xl text-white shadow-xl hover:shadow-2xl hover:scale-110 transition-all duration-300 border-2 border-white/20 hover:border-white/40"
+                aria-label="Instagram"
+              >
+                <div className="absolute inset-0 bg-white/20 rounded-2xl scale-0 group-hover:scale-100 transition-transform duration-300 opacity-0 group-hover:opacity-100"></div>
+                <i className="fa fa-instagram text-xl relative z-10"></i>
+              </a>
               <a
                 href="https://github.com/Ryad-Dev"
                 target="_blank"
@@ -166,16 +176,6 @@ const Hero: React.FC = () => {
                 <i className="fa fa-github text-xl relative z-10"></i>
               </a>
 
-              <a
-                href="https://instagram.com/ryad.sc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative flex justify-center items-center h-12 w-12 bg-pink-500 hover:bg-pink-400 rounded-2xl text-white shadow-xl hover:shadow-2xl hover:scale-110 transition-all duration-300 border-2 border-white/20 hover:border-white/40"
-                aria-label="Instagram"
-              >
-                <div className="absolute inset-0 bg-white/20 rounded-2xl scale-0 group-hover:scale-100 transition-transform duration-300 opacity-0 group-hover:opacity-100"></div>
-                <i className="fa fa-instagram text-xl relative z-10"></i>
-              </a>
 
               <a
                 href="https://x.com/ryad_sc"
@@ -187,7 +187,11 @@ const Hero: React.FC = () => {
                 <div className="absolute inset-0 bg-white/20 rounded-2xl scale-0 group-hover:scale-100 transition-transform duration-300 opacity-0 group-hover:opacity-100"></div>
                 <i className="fa fa-twitter text-xl relative z-10"></i>
               </a>
+              <p>
+              contactryaddev@gmail.com
+            </p>
             </div>
+            
           </div>
         </div>
         {/* <svg className="w-8 h-8 -translate-y-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

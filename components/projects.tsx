@@ -6,9 +6,10 @@ import Link from 'next/link';
 export default function Projets() {
   // ✅ SEULEMENT id + url !
   const items = [
-    { id: 1, url: 'https://coursquiz.com/' },
-    { id: 2, url: 'https://360-miniamaker.vercel.app/' },
-    { id: 3, url: 'https://www.cashin-app.me/' },
+    { id: 1, url: 'https://evangrowth.vercel.app/' },
+    { id: 2, url: 'https://coursquiz.com/' },
+    { id: 3, url: 'https://360-miniamaker.vercel.app/' },
+    { id: 4, url: 'https://www.cashin-app.me/' },
   ];
 
   const [projects, setProjects] = useState<any[]>([]);
@@ -55,12 +56,12 @@ export default function Projets() {
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-white/20 h-full"
+              className="group block bg-white/10 backdrop-blur-sm rounded-2xl p-2 hover:bg-white/20 transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-white/20 h-full"
             >
               {/* FAVICON + TITRE sur même ligne */}
-              <div className="flex items-center gap-4 mb-4">
+              <div className="flex items-center gap-4 mb-0">
                 {/* FAVICON CARRÉ */}
-                <div className="w-16 h-16 flex-shrink-0 bg-white/80 rounded-xl border border-white/50 shadow-lg overflow-hidden">
+                <div className="w-14 h-14 flex-shrink-0 bg-white/80 rounded-xl border border-white/50 shadow-lg overflow-hidden">
                   {project.favicon ? (
                     <img
                       src={project.favicon}
