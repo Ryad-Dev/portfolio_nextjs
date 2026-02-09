@@ -165,7 +165,7 @@ const Hero: React.FC = () => {
                 <div className="absolute inset-0 bg-white/20 rounded-2xl scale-0 group-hover:scale-100 transition-transform duration-300 opacity-0 group-hover:opacity-100"></div>
                 <i className="fa fa-instagram text-xl relative z-10"></i>
               </a>
-              <a
+              {/* <a
                 href="https://github.com/Ryad-Dev"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -174,7 +174,7 @@ const Hero: React.FC = () => {
               >
                 <div className="absolute inset-0 bg-white/20 rounded-2xl scale-0 group-hover:scale-100 transition-transform duration-300 opacity-0 group-hover:opacity-100"></div>
                 <i className="fa fa-github text-xl relative z-10"></i>
-              </a>
+              </a> */}
 
 
               <a
