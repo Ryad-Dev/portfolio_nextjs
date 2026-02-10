@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Projets() {
   // ✅ SEULEMENT id + url !
   const items = [
-    { id: 1, url: 'https://evangrowth.vercel.app/' },
+    { id: 1, url: 'https://semicolon-seven.vercel.app/' },
     { id: 2, url: 'https://coursquiz.com/' },
     { id: 3, url: 'https://360-miniamaker.vercel.app/' },
     { id: 4, url: 'https://www.cashin-app.me/' },
