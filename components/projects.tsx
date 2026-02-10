@@ -25,7 +25,7 @@ export default function Projets() {
 
   if (projects.length === 0) {
     return (
-      <div className="text-center w-full h-screen flex justify-center items-center">
+      <div className="text-center w-full h-screen flex justify-center items-center bg-neutral-950">
         <div className="bg-neutral-900 text-white w-5/6 h-5/6 flex justify-center items-center rounded-3xl p-8">
           <div className="text-center py-20">Chargement...</div>
         </div>
@@ -36,7 +36,7 @@ export default function Projets() {
   return (
     <div className="text-center w-full h-screen flex justify-center items-center bg-neutral-950">
       <div className="bg-neutral-900 text-white w-5/6 h-5/6 flex flex-col justify-start items-center rounded-3xl p-8 overflow-y-auto border-2 border-white/10">
-        
+
         {/* ✅ TITRE DE LA SECTION */}
         <div className="w-full max-w-4xl mx-auto mb-16 text-center">
           <h1 className="text-4xl md:text-6xl font-black bg-gradient-to-r from-white via-yellow-200 to-orange-400 bg-clip-text text-transparent mb-6 tracking-tight">
@@ -101,3 +101,4 @@ export default function Projets() {
     </div>
   );
 }
+

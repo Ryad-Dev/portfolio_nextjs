@@ -104,7 +104,7 @@ const Hero: React.FC = () => {
   return (
     <div className="text-center w-full h-screen flex justify-center items-center relative overflow-hidden bg-neutral-950">
       {/* Fond subtil sans dégradé */}
-      <div className="absolute inset-0 bg-neutral-900/30 backdrop-blur-sm"></div>
+      {/* <div className="absolute inset-0 bg-neutral-900/30 backdrop-blur-sm"></div> */}
 
       <div className="relative bg-neutral-900/95 backdrop-blur-xl text-white w-5/6 h-5/6 flex flex-wrap items-center justify-center rounded-3xl p-6 border-2 border-white/10 shadow-2xl ring-1 ring-white/5">
         <div className="flex flex-col lg:flex-row items-center justify-evenly space-y-4 lg:space-y-0 lg:space-x-12 w-full max-w-6xl mx-auto">
