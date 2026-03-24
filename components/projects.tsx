@@ -6,10 +6,11 @@ import Link from 'next/link';
 export default function Projets() {
   // ✅ SEULEMENT id + url !
   const items = [
-    { id: 1, url: 'https://semicolon-seven.vercel.app/' },
+    { id: 1, url: 'https://www.dataview.live/?ref=portfolio' },
     { id: 2, url: 'https://coursquiz.com/' },
     { id: 3, url: 'https://360-miniamaker.vercel.app/' },
-    { id: 4, url: 'https://www.cashin-app.me/' },
+    { id: 4, url: 'https://semicolon-seven.vercel.app/' },
+   
   ];
 
   const [projects, setProjects] = useState<any[]>([]);
@@ -40,7 +41,7 @@ export default function Projets() {
         {/* ✅ TITRE DE LA SECTION */}
         <div className="w-full max-w-4xl mx-auto mb-16 text-center">
           <h1 className="text-4xl md:text-6xl font-black bg-gradient-to-r from-white via-yellow-200 to-orange-400 bg-clip-text text-transparent mb-6 tracking-tight">
-            Mes Projets
+          
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mx-auto mb-6"></div>
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
@@ -50,7 +51,7 @@ export default function Projets() {
 
         {/* Grille des projets */}
         <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
+          {projects.slice().sort((a, b) => a.id - b.id).map((project) => (
             <Link
               key={project.id}
               href={project.url}

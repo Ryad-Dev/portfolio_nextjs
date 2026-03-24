@@ -2,11 +2,14 @@
 import AvisClients from "@/components/testimonials";
 import Hero from "../components/hero";
 import Projets from "../components/projects";
+import IndiePage from "@/components/indiePage";
 
 export default function Home() {
   return (
     <div className=" ">
-      <Hero />
+      
+      <IndiePage  />
+      {/* <Hero /> */}
       <Projets/>
       {/* <AvisClients/> */}
       
